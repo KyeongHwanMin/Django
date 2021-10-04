@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="UTF-8">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-{% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+
+{% extends 'base.html' %}
+{% block content %}
+
 <div class="container my-3">
     <table class="table">
         <thead>
@@ -35,6 +30,4 @@
         </tbody>
     </table>
 </div>
-
-</body>
-</html>
+{% endblock %}
