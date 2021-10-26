@@ -1,7 +1,7 @@
 
 # 게시판
 ## Main page
-![main](https://user-images.githubusercontent.com/17818416/138319817-d0b66eb8-948f-49a4-b3a6-cd746dbd9cb4.png)
+![main](https://user-images.githubusercontent.com/17818416/138853179-0a178103-8f7a-4b8c-a3d9-42ea3c915e4d.png)
 
 ## Question page
 ![qu](https://user-images.githubusercontent.com/17818416/138430944-c024ccdf-b858-4fea-a4b2-d5026341ea08.png)
