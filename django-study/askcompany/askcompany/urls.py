@@ -6,7 +6,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog1/', include('blog1.url')),
-    path('instagram', include('instagram.urls')),
+    path('instagram/', include('instagram.urls')),
 ]
 
 if settings.DEBUG:
