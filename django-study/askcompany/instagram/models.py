@@ -3,7 +3,8 @@ from django.db import models
 
 
 class Post(models.Model):
-    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE,
+                               related_name='+')
     message = models.TextField()
     photo = models.ImageField(blank=True)
     tag_set = models.ManyToManyField('Tag', blank=True)

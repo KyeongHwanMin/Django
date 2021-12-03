@@ -10,9 +10,9 @@ from .models import Post, Comment, Tag
 #     pass
 # admin.site.register(Post, PostAdmin)
 
-@admin.register(Post) #Wrapping
+@admin.register(Post)  # Wrapping
 class PostAdmin(admin.ModelAdmin):
-    list_display = ['id', 'photo_tag', 'message', 'message_length', 'is_public','created_at','updated_at']
+    list_display = ['id', 'photo_tag', 'message', 'message_length', 'is_public', 'created_at', 'updated_at']
     list_display_links = ['message']
     search_fields = ['message']
     list_filter = ['created_at', 'is_public']
@@ -25,9 +25,11 @@ class PostAdmin(admin.ModelAdmin):
     def message_length(self, post):
         return f"{len(post.message)}글자"
 
+
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
     pass
+
 
 @admin.register(Tag)
 class TagAdmin(admin.ModelAdmin):
