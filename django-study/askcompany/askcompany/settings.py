@@ -139,7 +139,10 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = '' # TODO
+STATIC_ROOT = os.path.joing(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'askcompany', 'static'),
+]
 
 MEDIA_URL = '/media/' # 접근
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # 경로 저장
