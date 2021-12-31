@@ -137,3 +137,28 @@ reduce, filter, map, join 등
 
 ### 커링 (Currying)
 일부의 인자를 고정한 새로운 함수를 반환하는 함수를 만드는 기법
+
+
+
+## babel,webpack,create-react-app
+
+babel과 webpack 그리고 create-react-appbabel-preset-env
+• 디폴트로 동작으로 ES6 이상의 preset을 적용하여, ES5로 transpiling
+• 개별 지정보다 본 preset을 권장
+• https://babeljs.io/env
+
+
+
+### webpack (module bundler)
+javascript, jsx, css, sass, less, es6, 이미지, HTML, 폰트 등 거의 모든 것이
+모듈이 될 수 있으며, 하나의 파일 (bundle)로 묶을 수 있다.
+모듈성과 네트워크 성능 향상
+Features
+• 코드를 필요할 때, 로딩 가능
+• Minifying : 불필요한 코드, 공백/줄바꿈, 긴 이름 등을 줄여, 파일 크기 줄이기
+• HMR (Hot module replacement) : 개발모드에서 원본 소스코드 변경을 감지하여, 변경된 모듈만 즉시 갱신
+지원 Loaders
+• babel-loader : ES6나 리액트 코드를 transpiling
+• css-loader : 설정에 따라 postcss-loader, sass-loader를 추가로 설정. css를 HTML내에서 <link /> 엘리먼트로
+포함시킬 필요없이 JS/JSX단에서 임포트하여 React 컴포넌트에 즉시 적용 가능
+
