@@ -191,3 +191,59 @@ Ant Design
 ### CRA 프로젝트에 적용하기
 1. yarn add antd
 2. App.js 참조 경로에 antd/dist/antd.css 추가하기
+
+
+
+## React Element
+
+### 리액트
+**UI 라이브러리 (웹 프론트엔드 및 앱 Native, VR 등에서 활용)**
+**UI데이터를 관리하는 방법을 제공**
+	부모 컴포넌트로부터 내려받는 속성값 à props
+	컴포넌트 내부에서 생성/관리되는 상탯값 à state
+**UI데이터(UI에 연결된 속성값/상탯값)가 변경되면, 해당 컴포넌트의 render()**
+**함수가 호출이 되어 화면을 자동으로 갱신**
+	클래스형 컴포넌트에서는 render() 함수가 호출
+	함수형 컴포넌트에서는 그 함수가 매번 호출. 컴포넌트에서 유지해야할 값들은 Hook을 통해 관리
+
+## 리액트의 핵심 – 선언적 UI (Declarative UI)
+**UI에 변화를 가할 때마다 일일이 코드를 수행하는 것이 아니라,**
+	데이터 (속성값/상탯값)에 맞춰 보여질 UI를 미리 선언해두면,
+	데이터 변경가 변경되면, 그 즉시 데이터에 맞춰 UI가 그려진다.
+
+
+
+### React Element
+**화면을 담당하며, React 앱의 가장 작은 단위**
+
+// jsx 문법
+
+const reactElement1 = <h1>Hello. React!</h1>
+
+// js 문법
+
+const reactElement2 = React.createElement('h1', null, 'Hello, React!');
+
+**일반 객체 (Plain Object)**
+**React DOM은 React Element와 일치하도록 DOM을 업데이트**
+**Element는 Component에서 화면을 담당**
+	컴포넌트의 주요 구성요소 : 속성값 (props), 상탯값 (state), 엘리먼트 (element), 그리고 로직
+
+
+
+### React Component
+**Component를 통해 UI를 재사용 가능한 개별적인 여러 조각으로 나눕니다.**
+	개념적으로 JavaScript 함수와 유사
+	속성값을 전달받아, Element를 반환
+**클래스로 구현하는 컴포넌트가 먼저 지원되었으며, 최근에 함수로 구현하는 컴포넌트를 지원**
+
+
+
+### React.createElement
+React.createElement(component, props, ...children) è ReactElement
+1. component
+• 문자열이나 리액트 컴포넌트. 문자열일 경우 DOM 요소를 생성
+2. props
+• 컴포넌트가 사용하는 데이터
+3. ...children
+• 해당 컴포넌트가 감싸고 있는 내부의 컴포넌트들을 다수 지정
