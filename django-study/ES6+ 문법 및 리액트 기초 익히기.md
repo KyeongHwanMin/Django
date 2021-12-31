@@ -162,3 +162,32 @@ Features
 • css-loader : 설정에 따라 postcss-loader, sass-loader를 추가로 설정. css를 HTML내에서 <link /> 엘리먼트로
 포함시킬 필요없이 JS/JSX단에서 임포트하여 React 컴포넌트에 즉시 적용 가능
 
+
+
+### create-react-app
+webpack, babel, eslilnt 등의 기본 설정이 된 리액트 프로젝트 생성
+
+설치> yarn global add create-react-app
+프로젝트 생성
+쉘> create-react-app --help
+쉘> create-react-app <프로젝트-디렉토리>
+
+**개발서버 구동**
+쉘> cd <디렉토리>
+쉘> yarn start
+
+
+
+## CRA 프로젝트에 Ant Design 적용하기
+
+Ant Design
+알리바바 그룹에서 개발한 UI 프레임워크
+	React, Vue, Angular 등을 지원
+깊은 디자인 철학을 가진 UX
+	Button, Grid, Layout, Form 등의 컴포넌트를 지원
+
+
+
+### CRA 프로젝트에 적용하기
+1. yarn add antd
+2. App.js 참조 경로에 antd/dist/antd.css 추가하기
