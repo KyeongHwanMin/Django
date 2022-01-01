@@ -584,3 +584,13 @@ this.setState 함수, useState 훅을 활용
 값 지정 시에 중괄호를 통해 다양한 타입의 값 및 표현식 지정 가능.
 	중괄호를 빼면, 문자열 타입의 값만 지정 가능
 
+
+
+## 속성값 타입 및 디폴트값 정의하기
+
+### 각 속성값에 대한 타입 명시 및 필수 여부 지정하기 -> 생산성
+TypeScript와 같은 정적 언어를 사용하거나,
+prop-types 팩키지를 통해 속성값에 타입을 지정할 수 있습니다.
+설치> yarn add prop-types
+지원 타입
+https://github.com/facebook/prop-types#usage
